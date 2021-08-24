@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activities"
+    tools:context=".CPU">
+ <RelativeLayout
+        android:layout_width="match_parent"
+     android:layout_height="@dimen/_150sdp"
+        android:background="@color/background"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_486sdp"
+        android:layout_height="@dimen/_306sdp"
+        android:layout_marginLeft="-90dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/shape"
+        android:rotation="-21" />
+
+    <TextView
+        style="@style/header_text"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Optimizer" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:text="20%"
+        android:fontFamily="@font/lcdnova"
+        android:textSize="@dimen/_70sdp" />
+
+    <TextView
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="CPU \ntemperature"/>
+
+    <Button
+        style="@style/btn_adverting"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_175sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_adverting"
+        android:drawableLeft="@drawable/ic_ad"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/btnadverting"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginLeft="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/ic_cpu"/>
+    <LinearLayout
+        android:id="@+id/progrgam"
+        android:layout_marginTop="@dimen/_220sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_viber"/>
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_telegram"/>
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_viber"/>
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_telegram"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:fontFamily="@font/mirza_medium"
+                android:text="5.1MB"
+                android:textColor="#23364A"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:fontFamily="@font/mirza_medium"
+                android:text="5.1MB"
+                android:textColor="#23364A"
+                android:textSize="@dimen/_15sdp"/>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:fontFamily="@font/mirza_medium"
+                android:textColor="#23364A"
+                android:text="5.1MB"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_33sdp"
+                android:fontFamily="@font/mirza_medium"
+                android:text="5.1MB"
+                android:textColor="#23364A"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_view"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_290sdp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+   <!-- <TextView
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_290sdp"
+        android:textColor="@color/white"
+        android:text="Реклама"
+        android:gravity="center"
+        android:textSize="@dimen/_24sdp"/>-->
+    <RelativeLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_gravity="center"
+        >
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circle_progressbar_fan"
+        android:textAlignment="center" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cpu"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_gravity="center"
+        android:text="optimize"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_btn_fan"
+        android:textSize="@dimen/_21sdp" />
+    </RelativeLayout>
+</FrameLayout>

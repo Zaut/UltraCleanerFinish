@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ultracleanerfinish">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_splashicon_foreground_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_splashicon_foreground_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UltraCleanerFinish">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+        <activity android:name=".Afterwindow"
+            android:theme="@style/Test2"
+            android:label="Also you can"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity android:name=".Home"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

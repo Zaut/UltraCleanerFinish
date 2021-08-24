@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/background"
+      />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="@dimen/_486sdp"
+        android:layout_height="@dimen/_306sdp"
+        android:background="@drawable/shape"
+        android:rotation="-21"
+        android:layout_marginLeft="-90dp"
+        android:layout_marginTop="-130dp"/>
+
+    <TextView
+        style="@style/header_text"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Charge Booster" />
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:fontFamily="@font/lcdnova"
+        android:text="95%"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_70sdp"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:fontFamily="@font/lcdnova"
+        android:text="95%"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_70sdp"
+        />
+
+    <TextView
+        android:id="@+id/info_txt"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_170sdp"
+        android:text="23,64 Gb / \n24,83 free space"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17sdp"
+        android:fontFamily="@font/roboto_medium"
+       />
+    <TextView
+        android:id="@+id/info_txt2"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_170sdp"
+        android:text="23,64 Gb / \n24,83 free space"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="@dimen/_17sdp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <Button
+        style="@style/btn_adverting"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_175sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_adverting"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/ic_ad"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/btnadverting"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_marginStart="@dimen/_195sdp"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/robot_r"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_view"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_290sdp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_290sdp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Реклама"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_24sdp" />-->
+
+    <RelativeLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_shape"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circle_progressbar"
+            android:textAlignment="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/boost"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_btn"
+            android:text="Boost"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+    </RelativeLayout>
+</FrameLayout>
